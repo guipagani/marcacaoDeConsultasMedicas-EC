@@ -4,7 +4,7 @@ import { Button, Input, Text } from 'react-native-elements';
 import { Platform, View, TouchableOpacity, Alert } from 'react-native';
 import theme from '../styles/theme';
 import { Doctor } from '../types/doctors';
-import { Appointment } from '../types/appointment';
+import { Appointment } from '../types/appointments';
 import { authApiService } from '../services/authApi';
 import { specialtiesApiService, Specialty } from '../services/specialtiesApi';
 import { User } from '../types/auth';

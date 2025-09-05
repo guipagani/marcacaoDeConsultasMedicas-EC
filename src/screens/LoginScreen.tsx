@@ -32,9 +32,11 @@ const LoginScreen: React.FC = () => {
     }
   };
 
+
+
   return (
     <Container>
-      <Title>Login</Title>
+      <Title>App Marcação de Consultas</Title>
       
       <Input
         placeholder="Email"
@@ -64,18 +66,14 @@ const LoginScreen: React.FC = () => {
       />
 
       <Button
-        title="Cadastrar Novo Paciente"
+        title="Cadastrar Novo Usuário"
         onPress={() => navigation.navigate('Register')}
         containerStyle={styles.registerButton as ViewStyle}
         buttonStyle={styles.registerButtonStyle}
       />
 
       <Text style={styles.hint}>
-        Use as credenciais de exemplo:
-      </Text>
-      <Text style={styles.credentials}>
-        Admin: admin@example.com / 123456{'\n'}
-        Médicos: joao@example.com, maria@example.com, pedro@example.com / 123456
+        Primeiro acesso? Cadastre-se como Admin ou Paciente.
       </Text>
     </Container>
   );
@@ -135,4 +133,4 @@ const ErrorText = styled.Text`
   margin-bottom: 10px;
 `;
 
-export default LoginScreen;
+export default LoginScreen; 
